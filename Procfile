@@ -1,0 +1,1 @@
+web: gunicorn let_talk.wsgi --log-file -
