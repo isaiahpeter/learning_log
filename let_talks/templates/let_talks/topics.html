@@ -7,7 +7,7 @@
 {% block content %}
   <ul>
     {% for topic in topics %}
-      <li><h3>
+      <li ><h3>
         <a href="{% url 'let_talks:topic' topic.id %}">{{ topic }}</a>
       </h3></li>
     {% empty %}
@@ -16,5 +16,9 @@
   </ul>
 
   <h3><a href="{% url 'let_talks:new_topic' %}">Add a new topic</a></h3>
-
+<style>
+  ul{
+    list-style-type: disc;
+  }</style>
 {% endblock content %}
+

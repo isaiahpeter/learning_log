@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # My apps
     'let_talks',
     'users',
+    'public',
  # Third party apps.
  'bootstrap4',
     #Default django apps

@@ -16,6 +16,8 @@ def topics(request):
     context = {'topics': topics}
     return render(request, 'let_talks/topics.html', context)
 
+
+
 @login_required
 def topic(request, topic_id):
     """Show a single topic and all its entries."""
@@ -26,6 +28,7 @@ def topic(request, topic_id):
     entries = topic.entry_set.order_by('-date_added')
     context = {'topic': topic, 'entries': entries}
     return render(request, 'let_talks/topic.html', context)
+
 
 
 @login_required
